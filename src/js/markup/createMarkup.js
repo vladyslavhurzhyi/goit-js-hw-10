@@ -6,7 +6,7 @@ export function createMarkupList(data) {
   for (let i = 0; i < data.length; i++) {
     markup += `<li class="list_item">
         <img width="25px" height="25px" src="${data[i].flags.svg}">
-        <p class="textCountry" >${data[i].name.official}</p>
+        <p class="textCountry" >${data[i].name.common}</p>
       </li>`;
   }
   renderList(markup);
