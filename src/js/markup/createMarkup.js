@@ -25,7 +25,7 @@ export function renderCountryInfo(data) {
     const lang = `${[data[i].languages].map(item => {
       return Object.values(item).join(', ');
     })}`;
-    console.log(markup);
+
     markup += `<li class="card_item">
     <div class="name_and_icon">
         <img class="icon" width="30px" height="30px" src="${data[i].flags.svg}">
@@ -36,7 +36,7 @@ export function renderCountryInfo(data) {
           <p class="cardText" ><b>Languages</b>: ${lang}</p>
       </li>`;
   }
-  console.log(markup);
+
   renderList(markup);
 }
 
