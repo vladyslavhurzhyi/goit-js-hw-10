@@ -18,3 +18,30 @@ body {
   max-width: 320px;
   margin-bottom: 16px;
 }
+
+.list_item {
+  display: flex;
+  align-items: center;
+}
+
+.textCountry {
+  margin-left: 10px;
+}
+
+.card_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.cardName {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.name_and_icon {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  margin-right: 10px;
+}
