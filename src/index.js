@@ -10,7 +10,6 @@ import './css/styles.css';
 
 const DEBOUNCE_DELAY = 300;
 
-let name = '';
 inputRef.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY));
 
 function onInput(event) {
@@ -27,9 +26,7 @@ function onInput(event) {
     })
     .catch(error => {
       console.log(error);
-      if ((error = 404)) {
-        Notiflix.Notify.failure('Oops, there is no country with that name.');
-      }
+      Notiflix.Notify.failure('Oops, there is no country with that name.');
     });
 }
 

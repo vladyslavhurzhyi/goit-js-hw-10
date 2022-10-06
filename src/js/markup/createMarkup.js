@@ -3,6 +3,7 @@ import { listRef } from '../refs';
 export let markup = '';
 
 export function createMarkupList(data) {
+  console.log(data);
   for (let i = 0; i < data.length; i++) {
     markup += `<li class="list_item">
         <img width="25px" height="25px" src="${data[i].flags.svg}">
@@ -21,6 +22,7 @@ export function deleteMarkup() {
 }
 
 export function renderCountryInfo(data) {
+  console.log(data);
   for (let i = 0; i < data.length; i++) {
     const lang = `${[data[i].languages].map(item => {
       return Object.values(item).join(', ');
