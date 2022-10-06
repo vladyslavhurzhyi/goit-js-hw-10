@@ -13,7 +13,7 @@ const DEBOUNCE_DELAY = 300;
 inputRef.addEventListener('input', debounce(onInput, DEBOUNCE_DELAY));
 
 function onInput(event) {
-  name = event.target.value.trim();
+  let name = event.target.value.trim();
 
   if (name === '') {
     deleteMarkup();
